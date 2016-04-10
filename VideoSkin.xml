@@ -1,0 +1,113 @@
+<?XML version="1.0" ?>
+<Skin Version="1.0" MinorVersion="1000">
+    <MainSkinArea Image='BRTool.png' AlphaMode='1' WidthLimit='160' HeightLimit='0'>
+        <Logo FileName='0.swf'/>
+        <Control>
+            <Static Align='Top' Height='13' ImageWidth='3' ImageHeight='13' LeftMargin='1' RightMargin='1'
+                    IsTitleBar='1'>
+                <Button Tooltip='Menu' CmdID='CMD_MAIN_MENU' Left='4' Top='4' Width='17' Height='5' ImageLeft='178'
+                        ImageTop='221'/>
+                <Label CmdID='CMD_TITLE_MESSAGE' Left='30' Top='1' Width='-45' UsingScroll='1' ScrollDistance='1'
+                       ScrollInterval='50' Height='13' FontName='����' FontSize='12' HoriAlignment='1' ColorX='1'
+                       ColorY='146'/>
+                <Button Tooltip='Playlist' CmdID='ID_PLAYLIST_WINDOW' AltCmdID='CMD_ATTACH_PLAYLIST'
+                        Left='-42' Top='3' Width='9' Height='11' ImageLeft='56' ImageTop='217'/>
+                <Button Tooltip='Minimize' CmdID='CMD_MIN_WINDOW' Left='-32' Top='3' Width='9' Height='11' ImageLeft='114'
+                        ImageTop='217'/>
+                <Button Tooltip='Maximize' CmdID='CMD_MAX_WINDOW' Left='-22' Top='3' Width='9' Height='11' ImageLeft='84'
+                        ImageTop='217'/>
+                <Button Tooltip='Restore' CmdID='CMD_RESTORE_WINDOW' Left='-22' Top='3' Width='9' Height='11'
+                        ImageTop='217'/>
+                <Button Tooltip='Close' CmdID='ID_APP_EXIT' Left='-12' Top='3' Width='9' Height='11' ImageLeft='28'
+                        ImageTop='217'/>
+            </Static>
+            <Static Align='Right' Contain='CMD_PLAYLIST_TOGGLE' Width='0' ConstSize='200'/>
+            <Static Align='Right' Contain='CMD_PLAYLIST_TOGGLE' Width='2' ImageTop='18' ImageWidth='2' ImageHeight='14'
+                    TopMargin='1' BottomMargin='12' IsSplitter='1' MinSplitterSizeLT='250'
+                    MinSplitterSizeRB='150'></Static>
+            <Static Align='Bottom' Height='13' ImageWidth='3' ImageHeight='13' LeftMargin='1' RightMargin='1'>
+                <PicLabel CmdID='CMD_MEDIATIME_MESSAGE' Left='55' Top='-9' Width='54' Height='5' ImageLeft='29'
+                          ImageTop='150' ImageWidth='132' ImageHeight='5' Transparent='1000' HoriAlignment='2'
+                          VisParentMinWidth='300'/>
+                <PicLabel CmdID='CMD_MEDIATIME_MESSAGE' Left='7' Top='-9' Width='48' Height='5' ImageLeft='29'
+                          ImageTop='155' ImageWidth='132' ImageHeight='5' Transparent='1000'/>
+                <Slider CmdID='CMD_TIMEBAR_CTRL' Left='115' Top='-10' Width='-78' Height='7' ImageLeft='4'
+                        ImageWidth='3' ImageHeight='7' BackImageLeft='4' AltImageLeft='4' LeftMargin='1' RightMargin='1'
+                        ThumbImageLeft='165' ThumbImageTop='149' ThumbWidth='3' ThumbHeight='7' RepeatAImageLeft='167'
+                        RepeatAImageTop='149' RepeatBImageLeft='167' RepeatBImageTop='149' RepeatImageWidth='2'
+                        RepeatImageHeight='7' VisParentMinWidth='300'/>
+                <Slider CmdID='CMD_TIMEBAR_CTRL' Left='65' Top='-10' Width='-78' Height='7' ImageLeft='4' ImageWidth='3'
+                        ImageHeight='7' BackImageLeft='4' AltImageLeft='4' LeftMargin='1' RightMargin='1'
+                        ThumbImageLeft='165' ThumbImageTop='149' ThumbWidth='3' ThumbHeight='7' RepeatAImageLeft='167'
+                        RepeatAImageTop='149' RepeatBImageLeft='167' RepeatBImageTop='149' RepeatImageWidth='2'
+                        RepeatImageHeight='7' VisParentMaxWidth='301'/>
+                <Button Tooltip='Mute' CmdID='ID_AUDIO_MUTE' Left='-69' Top='-9' Width='9' Height='5'
+                        ImageLeft='142' ImageTop='220'/>
+                <Slider CmdID='CMD_VOLUME_CTRL' Left='-56' Top='-10' Width='50' Height='7' ImageLeft='4'
+                        BackImageLeft='4' ImageWidth='3' ImageHeight='7' ThumbHeight='7' ThumbWidth='3'
+                        ThumbImageLeft='165' ThumbImageTop='149' LeftMargin='1' RightMargin='1'/>
+            </Static>
+            <Static Align='Client' Contain='CMD_VIDEO_WINDOW'/>
+        </Control>
+    </MainSkinArea>
+    <PlaylistSkinArea Image='BRTool.png' AlphaMode='1' WidthLimit='160' HeightLimit='26' SelBkgndColorX='6'
+                      SelBkgndColorY='145' FrameColorX='11' FrameColorY='145' BkgndColor1X='6' BkgndColor1Y='145'
+                      BkgndColor2X='6' BkgndColor2Y='145' CurTextColorX='22' CurTextColorY='233' SelTextColorX='90'
+                      SelTextColorY='210' TextColorX='1' TextColorY='145'>
+        <Control>
+            <Static Align='Top' Height='13' ImageWidth='3' ImageHeight='13' LeftMargin='1' RightMargin='1'
+                    IsTitleBar='1'>
+                <Button Tooltip='' CmdID='ID_PLAYLIST_WINDOW' Left='-12' Top='3' Width='9' Height='11'
+                        ImageLeft='28' ImageTop='217'/>
+                <Button Tooltip='' CmdID='CMD_ATTACH_PLAYLIST' Left='-22' Top='3' Width='9' Height='11'
+                        ImageTop='217'/>
+            </Static>
+            <Static Align='Bottom' Height='4' ImageWidth='3' ImageHeight='4' LeftMargin='1' RightMargin='1'/>
+            <Static Align='Left' Width='2' ImageTop='18' ImageWidth='2' ImageHeight='14' TopMargin='1'
+                    BottomMargin='12'/>
+            <Static Align='Right' Width='1' ImageWidth='1' ImageHeight='13' TopMargin='6' BottomMargin='6'/>
+            <Static Align='Client' Contain='CMD_PLAYLIST_HOLDER'>
+                <Static Align='Top' Height='1' ImageTop='14' ImageWidth='3' ImageHeight='1' LeftMargin='1'
+                        RightMargin='1'/>
+                <Static Align='Bottom' Height='12' ImageTop='14' ImageWidth='3' ImageHeight='3' LeftMargin='1'
+                        RightMargin='1' TopMargin='1' BottomMargin='1'>
+                    <Button Tooltip='Add' CmdID='CMD_PLAYLIST_ADD' Left='8' Top='2' Width='9' Height='9' ImageLeft='232'
+                            ImageTop='218'/>
+                    <Button Tooltip='Remove' CmdID='CMD_PLAYLIST_DEL' Left='22' Top='2' Width='9' Height='9'
+                            ImageLeft='259' ImageTop='218'/>
+                    <Button Tooltip='Repeat' CmdID='ID_PLAYBACK_REPEAT' Left='-31' Top='2' Width='9' Height='9'
+                            ImageLeft='232' ImageTop='226'/>
+                    <Button Tooltip='Shuffle' CmdID='ID_PLAYBACK_SHUFFLE' Left='-17' Top='2' Width='9' Height='9'
+                            ImageLeft='259' ImageTop='226'/>
+                </Static>
+                <Static Align='Right' Width='2' ImageLeft='3' ImageTop='10' ImageWidth='2' ImageHeight='3' TopMargin='1'
+                        BottomMargin='1'/>
+                <Static Align='Client' Contain='CMD_PLAY_LIST'/>
+            </Static>
+        </Control>
+    </PlaylistSkinArea>
+    <WindowSkinArea Image='BRTool.png' UseWindowFrame='2'>
+        <Common>
+            <BtnPosition Top='228' Width='58' Height='19'/>
+            <AltBtnPosition Left='246' Top='255' Width='58' Height='19'/>
+            <TabPosition Left='245' Top='235' Width='76' Height='20'/>
+            <TabTextColor Left='6' Top='145'/>
+            <WindowType0 Left='458' Top='117' Width='15' Height='114' LeftDrawMargin='7' RightDrawMargin='7'
+                         TopDrawMargin='56' BottomDrawMargin='57' BottomMargin='33' TopSkinMargin='25'
+                         BottomSkinMargin='2' LeftSkinMargin='1' RightSkinMargin='1'/>
+            <WindowType1 Left='475' Top='92' Width='15' Height='139' LeftDrawMargin='7' RightDrawMargin='7'
+                         TopDrawMargin='56' BottomDrawMargin='57' TopSkinMargin='25' BottomMargin='33'
+                         LeftSkinMargin='1' RightSkinMargin='1' BottomSkinMargin='2' TopMargin='25'/>
+            <WindowType2 Left='458' Top='117' Width='15' Height='81' LeftDrawMargin='7' RightDrawMargin='7'
+                         TopDrawMargin='40' BottomDrawMargin='40' LeftSkinMargin='1' RightSkinMargin='1'
+                         TopSkinMargin='25' BottomSkinMargin='5'/>
+            <AboutIcon Left='345' Top='138' Width='45' Height='45' PosX='30' PosY='80'/>
+            <AboutQuery Left='198' Top='159' Width='45' Height='16'/>
+            <MessageIconType0 Left='286' Top='200' Width='34' Height='30'/>
+            <MessageIconType1 Left='328' Top='200' Width='34' Height='30'/>
+            <MessageIconType2 Left='370' Top='200' Width='34' Height='30'/>
+            <MessageIconType3 Left='413' Top='200' Width='34' Height='30'/>
+            <AutoUpdateLogo Width='0' Height='0'/>
+        </Common>
+    </WindowSkinArea>
+</Skin>
